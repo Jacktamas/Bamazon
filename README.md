@@ -3,7 +3,7 @@ This app helps customers order products from **Bamazon** and deplete stock from 
 
 
 ## Customers View
-* Customers have to choose customer user to order through **Bamazon**
+Customers have to choose customer user to order through **Bamazon**
 <img src="images/customer1.png" width="500px">
 
 
