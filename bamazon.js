@@ -25,18 +25,23 @@ inquirer.prompt([
 function validate() {
   inquirer.prompt([
     {
+      type:'input',
+      name: 'username',
+      message:'Please enter your user name'
+    },
+    {
       type:'password',
       name: 'password',
       message:'Please enter your password'
     }
   ]).then(function(answer) {
-    if(answer.password == 'manager'){
+    if(answer.password == 'manager' && answer.username == answer.username){
       var date = new Date();
-      console.log('\n Welcome to the manager dashboard\n ',date.toDateString()+"\n ", date.toLocaleTimeString()+"\n -------------------------------------- \n");
+      console.log('\n \" Managers Dashboard\"\n Welcome back '+answer.username+'!\n ',date.toDateString()+"\n ", date.toLocaleTimeString()+"\n -------------------------------------- \n");
       require('./bamazonManager.js');
     }
     else {
-      console.log('\n Sorry your password does not match!');
+      console.log('\n Sorry your user name or password is wrong!');
     }
   })
 }
