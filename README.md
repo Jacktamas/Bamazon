@@ -1,6 +1,9 @@
 # Bamazon
-This app helps customers order products from **Bamazon** and deplete stock from the store's inventory and provide access to managers to *view products for sale*, *view low inventory*, *add to inventory*, *add new products*.
+A command line application that helps customers order products from **Bamazon** and deplete stock from the store's inventory and provide access to managers to *view products for sale*, *view low inventory*, *add to inventory*, *add new products*.
 
+## Installation
+* Download the project and CD to project folder and run ```npm install```
+* Then run ```node bamazon.js``` 
 
 ## Customers View
 Customers have to choose customer user to order through **Bamazon**
